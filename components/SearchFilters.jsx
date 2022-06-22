@@ -27,7 +27,7 @@ const SearchFilters = () => {
     return (
         <Flex bg='gray.100' p='4' justifyContent='center' flexWrap='wrap'>
             {filters.map(filter => (
-                <Box query={filter.queryName}>
+                <Box key={filter.queryName}>
                     <Select
                         placeholder={filter.placeholder}
                         w='fit-content'
